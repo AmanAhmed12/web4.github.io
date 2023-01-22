@@ -1,0 +1,203 @@
+        <DOCTYPE!html>
+<head>
+    <style>
+        body{background-color:black;
+        }
+       
+
+        
+        #container{
+            width:650px;
+            height: 1155px;
+       
+            position: absolute;
+            left: 800px;
+            background-image: url("badge.png");
+            background-repeat: no-repeat;
+            background-size:contain;
+            background-position: center;
+           
+            
+            
+
+        }
+        #form{
+            padding-left:50px;
+            font-weight: bold;
+           
+            margin-left: 30px;
+            height:1120px;
+            width:710px;
+
+            margin-top: 50px;
+            
+            isolation: isolate;
+            color:green;
+          
+    
+        }
+        #form::after{
+            content: '';
+            z-index: -1;
+            inset: 0;
+            position: absolute;
+           background-color:black;
+           
+            opacity: .8;
+        }
+        
+
+        
+        label{line-height: 1.7;
+            font-size: 17px;
+
+        }
+        hr{ width:588px; 
+             text-align: left;
+            margin-left: 0;
+            
+
+        }
+        #health{text-transform: capitalize;
+             font-weight: bold;
+
+        }
+        #display{
+            position:fixed;
+            left: 125px;
+            top:20px;
+            width:400px;
+            color:white;
+            padding-left: 20px;
+            background-image: url("badge.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            font-weight: bold;
+            isolation: isolate;
+            width:500px;
+            height: 800px;
+        }
+        #display::after{
+            content: '';
+            z-index: -1;
+            inset: 0;
+            background-color: black;
+            position: absolute;
+            opacity: .6;
+        }
+        span{
+            color:green
+        }
+        h1{
+            padding-top: 30px;
+            color: white;
+        }
+        #checkdetails{
+            text-align: center;
+        }
+        #prev{
+    background-color:green ;
+    width: 90px;
+    height: 25px;
+   
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    box-shadow: 0px 5px 15px white;
+    border-radius: 10%;
+    
+    
+}
+#coverlink{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 5px; 
+   
+ 
+
+    
+}
+@keyframes blinker{
+            50%{opacity:0;
+            }
+        }
+#coverlink:hover{
+    animation: blinker 1s step-start infinite;
+    
+}
+
+      
+
+        
+    </style>
+</head>
+<body>
+    <div id="prev"><a href="cover.html" id="coverlink">Cover page</a></div>
+  
+    <div id="display"><h1 id="checkdetails">Check your  details</h1>
+
+    </div>
+<div id="container">
+<div id="form">
+
+<h1>Blood Donor information</h1>
+<label>Donor's Name</label><br>
+    <input type="text"  placeholder="First" size="30px" id="fname">&nbsp;
+    <input type="text"  placeholder="Last" size="30px" id="lname"><br><br>
+<label>Date Of Birth</label><br>
+    <input type="datetime"  placeholder="MM/DD/YYYY" size="66px" id="dob"><br><br>
+<label>Email</label><br>
+    <input type="email" size="66px" placeholder="amaanhilmy8@gmail.com" id="mail"><br><br>
+<label>Mobile</label><br>
+    <input type="tel" placeholder="### ### ####" size="66px" id="tel"><br><br>
+<label>Address</label><br>
+    <input type="text" placeholder="Street Address" size="66px" id="streetaddr"><br><br>
+    <input type="text" placeholder="Street Address Line 2" size="66px" id="streetaddr2"><br><br>
+    <input type="text" placeholder="City" size="30px" id="city">&nbsp;
+    <input type="text" placeholder="Region" size="30px" id="region"><br><br>
+    <input type="number" placeholder="Postal / Zip Code" size="30px" id="postal">&nbsp;<br><br>
+<label>Occupation</label><br>
+    <input type="text"  size="66px" id="occupation"><br><br>
+<label>Blood type</label><br>
+    <select id="bloodgroup">
+        <option>a+</option>
+        <option>a-</option>
+       <option>b+</option>
+       <option>b-</option>
+       <option>ab+</option>
+       <option>ab-</option>
+        <option>o+</option>
+        <option>o-</option>
+    </select><br><br>
+<label>Did you ever donate blood before ?</label><br>
+   <input type="radio" id="radiobt1" name="donate" value="yes"> <label for="yes">Yes</label><br><br>
+  <input type="radio" id="radiobt2"  name="donate"  value="no"><label for="no">No</label><br><br>
+<label id="health">Health Security Check</label><br><br>
+<label>Do you suffer from any diseases ?</label><br>
+    <input type="radio" id="radiobt3"  name="disease" value="yes"> <label>Yes</label><br>
+    <input type="radio"  id="radiobt4" name="disease" value="no"> <label>No</label><br><br>
+<label>Do you have allergies ?</label><br>
+    <input type="radio"  id="radiobt5" name="allergies" value="yes"> <label>Yes</label><br>
+    <input type="radio"  id="radiobt6" name="allergies" value="no"> <label>No</label><br><br><br>
+     <button onclick="display();this.onclick=null;">Submit</button>
+     <button onclick="erase();">Clear</button>
+</div>
+</div>
+<script type="text/javascript" src="application.js"></script>
+   
+
+ 
+
+
+
+
+
+
+
+
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        #feed{
+            position: relative;
+            left: 200px;
+            top: 200px;
+            background-color: gray;
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+        }
+      h1{
+        text-align: center;
+        font-size: 78px;
+        text-transform: uppercase;
+        position: relative;
+        top: 150px;
+        color: green;
+      }
+      body{
+        background-color: black;
+      }
+      #submit{
+        position: absolute;
+        top: 650px;
+        left: 270px;
+        width: 100px;
+        height: 50px;
+        font-weight: bold;
+      }
+      #container{
+        background-image: url("badge.png");
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 300px;
+        background-size: cover;
+        position: absolute;
+        left:1200px;
+      }
+      #prev{
+    background-color:green ;
+    width: 90px;
+    height: 25px;
+   
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    box-shadow: 0px 5px 15px white;
+    border-radius: 10%;
+    
+    
+}
+#coverlink{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 5px; 
+   
+ 
+
+    
+}
+@keyframes blinker{
+            50%{opacity:0;
+            }
+        }
+#coverlink:hover{
+    animation: blinker 1s step-start infinite;
+    
+}
+#Clear{ position: absolute;
+        top: 650px;
+        left: 400px;
+        width: 100px;
+        height: 50px;
+        font-weight: bold;
+
+}
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="prev"><a href="cover.html" id="coverlink">Cover page</a></div>
+    <div id="container"></div>
+     <h1> feed back</h1>
+     <form>
+   <textarea name="feedback" id="feed" cols="150" rows="10" placeholder="Enter Your Comments.."></textarea>
+    <button id="submit">Submit</button>
+    <button id="Clear" onclick="clear()">Clear</button>
+
+
+
+
+</form>
+<script>
+function clear(){
+  document.getElementById("feed").innerHTML="";
+}
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

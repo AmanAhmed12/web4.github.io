@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            background-color: black;
+        }
+     #container{
+        width: 1000px;
+        height: 1700px;
+       
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-around;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("badge.png");
+        background-size: 1100px 1500px;
+        background-repeat: no-repeat;
+        background-position: center;
+        isolation: isolate;
+        
+     }
+     #container::after{
+        content: '';
+        z-index: -1;
+        inset: 0;
+        background-color:black;
+        position: absolute;
+        opacity: .7;
+     }
+     #list{
+        flex:2;
+        
+    
+    }
+    #main{ width: 1000px;
+           height:1800px;
+      
+        flex:3;
+    }
+    h1{
+        text-align: center;
+        text-transform: capitalize;
+        color: green;
+    }
+    span{
+        font-weight: bolder;
+        font-size: 20px;
+        color: red;
+    }
+    p{
+        text-align: justify;
+        font-weight: bold;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: white;
+    }
+    a{
+        color:maroon;
+        text-decoration: none;
+        line-height: 1.7;
+        font-weight: bold;
+        
+        
+    }
+    @keyframes blinker{
+            50%{opacity:0;
+            }
+        }
+    a:hover{
+        
+        font-weight: bold;
+        animation: blinker 1s step-start infinite;
+        color:gray;
+
+    }
+  ul{
+    list-style-type:square;
+    
+  }
+  #head{
+    font-size: 48px;
+    color: green;
+  }
+  h2{
+    color: green;
+    margin-left: 25px;
+  }
+  #criteria{
+    color: maroon;
+    text-align: center;
+  }
+  #prev{
+    background-color:green ;
+    width: 90px;
+    height: 25px;
+   
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    box-shadow: 0px 5px 15px white;
+    border-radius: 10%;
+    
+    
+}
+#coverlink{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 5px; 
+    
+ 
+
+    
+}
+
+
+
+
+    
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="prev"><a href="cover.html" id="coverlink">Cover page</a></div>
+    <h1 id="head">donor criteria</h1>
+     <div id="container">
+          <div id="list">
+            <h2>Headings</h2>
+            <ul>
+                <li><a href="#para2">Age</a></li>
+                <li><a href="#para3">Weight</a></li>
+                <li><a href="#para4">Health</a></li>
+                <li><a href="#para5">Travel</a></li>
+                <li><a href="#para6">Behaviours</a></li>
+                <li><a href="#para7">Pregnancy and breastfeeding</a></li>
+                
+                
+
+            </ul>
+          </div>
+           <div id="main">
+                    <h1 id="criteria">criteria</h1>
+                     <p id="para1">Most people can give blood if they are in good health.
+                         There are some basic requirements one  need to fulfill in order to become a blood donor.
+                           Below are some basic eligibility guidelines:
+                    </p>
+                    <p id="para2"><span>Age:</span><br><br>
+
+                        You are aged between 18 and 65.<br><br>
+                        
+                        * In some countries national legislation permits 16–17 year-olds to donate provided that they fulfil the physical and hematological criteria required and that appropriate consent is obtained.<br><br>
+                        
+                        * In some countries, regular donors over the age of 65 may be accepted at the discretion of the responsible physician.
+                         The upper age limit in some countries are 60.
+                    </p>
+                    <p id="para3"><span>Weight:</span><br><br>
+
+                        You weigh at least 50 kg.<br><br>    
+                        
+                        * In some countries, donors of whole blood donations should weigh at least 45 kg to donate 350 ml ± 10% .
+                    </p>
+                    <p id="para4"><span>Health:</span><br><br>      
+
+                        You must be in good health at the time you donate.<br><br>  
+                        
+                        You cannot donate if you have a cold, flu, sore throat, cold sore, stomach bug or any other infection.<br><br>  
+                        
+                        If you have recently had a tattoo or body piercing you cannot donate for 6 months from the date of the procedure. 
+                         If the body piercing was performed by a registered health professional and any inflammation has settled completely, you can donate blood after 12 hours.<br><br>  
+                        
+                        If you have visited the dentist for a minor procedure you must wait 24 hours before donating; for major work wait a month.<br><br>  
+                        
+                        You must not donate blood If you do not meet the minimum haemoglobin level for blood donation<br><br>  
+                        
+                        * A test will be administered at the donation site. In many countries,
+                         a haemoglobin level of not less than 12.0 g/dl for females and not less than 13.0 g/dl for males as the threshold.
+                    </p>
+                    <p id="para5"><span>Travel:</span><br><br>  
+
+                        Travel to areas where mosquito-borne infections are endemic, e.g. malaria, 
+                        dengue and Zika virus infections, may result in a temporary deferral .<br><br> 
+                        
+                        Many countries also implemented the policy to defer blood donors with a history of travel or residence for defined cumulative exposure periods in specified countries or areas,
+                         as a measure to reduce the risk of transmitting variant Creutzfeldt-Jakob Disease (vCJD) by blood transfusion.
+                    </p>
+                    <p id="para6"><span>Behaviours:</span><br><br>  
+
+                        You must not give blood:<br><br>  
+                        
+                        If you engaged in “at risk” sexual activity in the past 12 months<br><br>  
+                        
+                        Individuals with behaviours below will be deferred permanently:<br><br>   
+                        
+                        Have ever had a positive test for HIV (AIDS virus<br><br>  )
+                        
+                        Have ever injected recreational drugs.<br><br>  
+                        
+                        * In the national blood donor selection guidelines, there are more behavior eligibility criteria.
+                         Criteria could be different in different countries.
+                    </p>
+                    <p id="para7"><span>Pregnancy and breastfeeding:</span><br><br> 
+                        
+                        Following pregnancy, the deferral period should last as many months as the duration of the pregnancy.<br><br> 
+                        It is not advisable to donate blood while breast-feeding. Following childbirth, 
+                        the deferral period is at least 9 months (as for pregnancy) and until 3 months after your baby is significantly weaned 
+                        (i.e. getting most of his/her nutrition from solids or bottle feeding).<br><br> 
+                        More information on eligibility to donate:<br><br> 
+                        National  eligibility guidelines must be followed when people donate blood in the blood service in specific countries.
+                        To find out whether any health conditions, medications, professions or travel history to could affect your ability to give blood,
+                        please search for detailed information in the national/local blood services.
+                    </p>
+           </div>     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </div>
+
+
+
+
+</body>
+</html>
